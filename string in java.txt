@@ -119,7 +119,45 @@ class Main {
     }
 }
 
-
+STRING-TO FIND LARGEST NUMBER WITH COMPARISON:
+ 
+ class Main {
+     public static void main(String[] args) {
+         
+         String s1 = "123,456,789";
+         String[] arr = s1.split(",");
+         System.out.println(arr[0]);
+         int max=0;
+         for(int i=0;i<arr.length;i++)
+         {
+             if(Integer.parseInt(arr[i])>max)
+             {
+                 max=Integer.parseInt(arr[i]);
+                 System.out.println("changed max:"+max);
+             }
+         }
+         System.out.println(max);
+     }
+ }
+ 
+ 
+ STRING-FINDING LARGER NUMBER WITHOUT SPLIT USING ARRAY:
+ 
+ class Main {
+     public static void main(String[] args) {
+         int a=10;
+         int max=0;
+         int[] arr={1,2,4,3,5,12,10};
+         for(int i=0;i<arr.length;i++)
+         {
+             if(arr[i]>max)
+             {
+                 max=arr[i];
+             }
+         }
+         System.out.print(max);
+     }
+ }
 
 
 
